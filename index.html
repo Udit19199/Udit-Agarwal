@@ -9,21 +9,22 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="site-header">
-        <a href="./index.html" class="nav-brand">Udit Agarwal</a>
-        <button class="mobile-nav-toggle" aria-controls="nav-links" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-            <svg class="icon-hamburger" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
-        <nav class="nav-links" id="nav-links">
-            <a href="./blogs.html">Blogs</a>
-            <a href="./papershelf.html">Papershelf</a>
-            <a href="./projects.html">Projects</a>
-        </nav>
+        <div class="header-content">
+            <a href="./index.html" class="nav-brand">Udit Agarwal</a>
+            <nav class="nav-links" id="nav-links">
+                <a href="./blogs.html">Blogs</a>
+                <a href="./papershelf.html">Papershelf</a>
+                <a href="./projects.html">Projects</a>
+            </nav>
+        </div>
     </header>
 
     <main class="main-container" id="main-content">
@@ -32,22 +33,28 @@
                 <section>
                     <h1>Hey, I am Udit</h1>
                     <p class="about">
-                        Hi, I’m Udit — a Computer Science student at JECRC University and an aspiring Software Developer. 
-                        I enjoy turning ideas into fast, reliable, and user-focused applications. My main stack includes React, 
-                        Next.js, Node.js, and PostgreSQL, and I’m comfortable building across the full stack—from designing 
-                        APIs to fine-tuning frontend performance. I thrive in fast-paced environments like hackathons, 
-                        where quick problem-solving and clean execution matter most. I'm always exploring better ways to 
-                        to build scalable systems, write maintainable code, and deliver products that actually make an impact. 
-                        I’m currently looking to contribute to teams where I can learn deeply, ship often, and grow as an engineer.
+                        I'm a Computer Science student at JECRC University and an aspiring Software Developer.
+                        I enjoy turning ideas into fast, reliable, and user-focused applications.
+                        <br>
+                        <br>
+                        My main stack includes React,
+                        Next.js, Node.js, and PostgreSQL, and I'm comfortable building across the full stack—from
+                        designing APIs to fine-tuning frontend performance.
+                        <br>
+                        <br>
+                        I thrive in fast-paced environments like hackathons,
+                        where quick problem-solving and clean execution matter most. I'm always exploring better ways to
+                        to build scalable systems, write maintainable code, and deliver products that actually make an
+                        impact.
+                        <br>
+                        <br>
+                        I'm currently looking to contribute to teams where I can learn deeply, ship often, and grow as
+                        an engineer.
                     </p>
                 </section>
             </div>
             <div class="right-column">
-                                <picture>
-                  <source srcset="assets/profile.webp" type="image/webp">
-                  <source srcset="assets.profile.jpeg" type="image/jpeg">
-                  <img id="profile" src="assets/profile.jpeg" alt="A portrait of Udit Agarwal." />
-                </picture>
+                <img id="profile" src="assets/profile.jpeg" alt="A portrait of Udit Agarwal." />
             </div>
         </div>
     </main>
@@ -55,17 +62,18 @@
     <footer class="site-footer">
         <div class="social-links">
             <a href="https://github.com/Udit19199" target="_blank" title="GitHub">
-                <svg class="social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7.0375 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.525 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.95 11.1625 6.85 12 6.85C12.8375 6.85 13.675 6.95 14.475 7.1625C16.3875 5.875 17.225 6.1375 17.225 6.1375C17.775 7.5125 17.425 8.5375 17.325 8.7875C17.9625 9.4875 18.35 10.3875 18.35 11.475C18.35 15.3125 16.025 16.1625 13.8 16.4125C14.1375 16.7 14.4625 17.225 14.4625 18.0125C14.4625 19.1375 14.45 20.6 14.45 21.0125C14.45 21.275 14.6375 21.5875 15.15 21.4875C19.125 20.1625 22 16.425 22 12C22 6.475 17.525 2 12 2Z" fill="currentColor"/>
-                </svg>
+                <img src="assets/github.png" alt="GitHub Icon" class="social-icon" />
             </a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/uditagarwal19199/" target="_blank">
+                <img src="assets/linkedin.png" alt="LinkedIn Icon" class="social-icon" />
+            </a>
+            <a href="https://x.com/UditAga84007584" target="_blank">
+                <img src="assets/twitter.jpg" alt="Twitter Icon" class="social-icon" />
+            </a>
         </div>
-        <p>© 2025 Udit Agarwal</p>
+        <p>© Udit Agarwal, 2025</p>
     </footer>
 
-    <script src="scripts.js"></script>
 </body>
 
 </html>
